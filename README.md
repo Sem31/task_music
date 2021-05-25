@@ -1,7 +1,8 @@
 1. git clone
 2. create env
 ```
-    python3 -m venv evn
+    python3 -m venv env
+    source env/bin/activate
 ```
 3. install req file
 ```
@@ -10,6 +11,8 @@
 4. run api 
 ```
     cd machineTest
+    python manage.py migrate
+    python manage.py createsuperuser
     python manage.py runserver
 ```
 
